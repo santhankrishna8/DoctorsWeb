@@ -1,0 +1,86 @@
+*{
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(15, 167, 51);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:black;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    display: flex;
+    flex-direction: column;
+    color: white ;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    margin-left: 10rem;
+
+  }
+  
+footer{
+    background-color: black;
+    height:30vh;
+    margin-top: 200px;
+}
+@media screen and (max-width: 36rem)  {
+    *{
+        font-size: 10px;
+    }
+    .subnav:hover .subnav-content {
+        display: flex;
+        flex-direction: column;
+        width:40%;
+        margin-left: 10rem;
+    
+      }
+    
+}
