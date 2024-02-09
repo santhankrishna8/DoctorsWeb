@@ -82,5 +82,8 @@ footer{
         margin-left: 10rem;
     
       }
+      .subnav:hover .subnav-content:click .subnav-content{
+        display: none;
+      }
     
 }
