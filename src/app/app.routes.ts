@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
+    {path:'',component:HomeComponent},
     {path:'k',component:KComponent},
     {path:'general',component:GeneralComponent},
     {path:'joint',component:JointComponent},

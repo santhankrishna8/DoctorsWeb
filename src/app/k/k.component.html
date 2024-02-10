@@ -1,4 +1,12 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            UPLOADCARE_PUBLIC_KEY = 'demopublickey';
+        </script>
+        <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+    </head>
+<body>
 <h1>కామెర్లు</h1>
 <div class="states">
     <a class="b1" href="k/#ap">Andhra Pradesh</a>
@@ -7,9 +15,13 @@
 <div id="ap">
     <h2>Tirupati</h2>
     <div class="t">
-        <div class="t1">
-            <a>V Bala Krishna</a>
-            <a>ph:9347580090</a>
+        <div class="t1" >
+            <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+            <label for="file" style="cursor: pointer;">Upload Image</label>
+            <img id="output" width="200" />
+            
+            
+          
         </div>
         <div class="t1">
             <a>V Bala Krishna</a>
@@ -176,3 +188,11 @@
     </div>
 
 </div>
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+</body>
+</html>

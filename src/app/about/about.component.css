@@ -1,8 +1,9 @@
 *{
-    background-color: chartreuse;
+    background-color: white;
     font-family: monospace;
+    height:100vh;
 }
 h1{
-    color:black;
+    color:chartreuse;
     text-align: center;
 }

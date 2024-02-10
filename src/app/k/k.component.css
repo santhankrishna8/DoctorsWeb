@@ -42,7 +42,7 @@ h2{
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width:20%;
-    height: 100px;
+    height: 200px;
     font-size: 1.4rem;
     margin:10px;
     box-sizing: border-box;
@@ -54,6 +54,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 @media screen and (max-width: 36rem)  {
     *{
         font-size: 10px;
