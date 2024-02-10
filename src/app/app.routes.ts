@@ -7,6 +7,8 @@ import { SnakeBiteComponent } from './snake-bite/snake-bite.component';
 import { PComponent } from './p/p.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { VComponent } from './v/v.component';
+import { RegComponent } from './reg/reg.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -18,4 +20,6 @@ export const routes: Routes = [
     {path:'p',component:PComponent},
     {path:'home',component:HomeComponent},
     {path:'about',component:AboutComponent},
+    {path:'v',component:VComponent},
+    {path:'reg',component:RegComponent},
 ];

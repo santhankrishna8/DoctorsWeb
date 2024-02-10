@@ -15,6 +15,7 @@ h1{
 .container{
     display:flex;
     flex-direction: row;
+    gap:0.5rem;
 }
 .text{
     font-family: Arial, Helvetica, sans-serif;
@@ -25,8 +26,8 @@ h1{
 .container2{
     
     position:absolute;
-    transform: translate(-50%,100%);
-    top: 30%;
+    transform: translate(-5%,-22%);
+    top: 60%;
     left: 50%;
     overflow: hidden;
     border: 20px solid #ffffff;
@@ -37,6 +38,17 @@ h1{
     width: 100%;
     display: flex;
     animation: slide 16s infinite;
+}
+
+
+.container3 {
+    transform: translate(30%,100%);
+    padding:1rem;
+    
+}
+.container3 ul li{
+    transform: translate(30%,100%);
+
 }
 @keyframes slide{
     0%{
@@ -85,7 +97,9 @@ img{
 
     }
     .container2{
-        transform: translate(-50%,260%);
+        transform: translate(-50%,270%);
+        margin-top: -50rem;
+        width:80%;
     }
     .wrapper img{
         width: 100%;

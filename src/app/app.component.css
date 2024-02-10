@@ -91,11 +91,11 @@
       }
     
       .navbar a{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bolder;
       }
       .subnav .subnavbtn{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bolder;
       }
 }
