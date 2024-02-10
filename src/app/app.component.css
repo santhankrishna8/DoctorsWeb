@@ -44,7 +44,7 @@
   .navbar a:hover, .subnav:hover .subnavbtn {
     background-color: rgb(12, 153, 31);
   }
-  .navbar a:focus, .subnav:focus .subnavbtn {
+  .navbar a:active, .subnav:active .subnavbtn {
     background-color: rgb(12, 153, 31);
   }
   

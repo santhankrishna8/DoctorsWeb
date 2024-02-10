@@ -21,5 +21,20 @@ button{
     *{
         font-size: 10px;
     }
-    
+
+    button{
+        font-size: 1.2rem;
+        width: 20rem;
+        height:7rem;
+        display: flex;
+        color:white;
+        font-weight: bold;
+        justify-content: center;
+        flex-direction: column;
+        
+        align-items: center;
+        text-align: center;
+        margin:15px auto;
+    }
+
 }
