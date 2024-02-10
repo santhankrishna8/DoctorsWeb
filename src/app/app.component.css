@@ -7,7 +7,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 65%;
 }
 .navbar {
     overflow: hidden;
@@ -74,11 +74,7 @@
 
   }
   
-footer{
-    background-color: black;
-    height:30vh;
-    margin-top: 200px;
-}
+
 @media screen and (max-width: 36rem)  {
     *{
         font-size: 10px;
