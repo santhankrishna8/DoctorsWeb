@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { VComponent } from './v/v.component';
 import { RegComponent } from './reg/reg.component';
+import { CComponent } from './c/c.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
@@ -22,4 +23,5 @@ export const routes: Routes = [
     {path:'about',component:AboutComponent},
     {path:'v',component:VComponent},
     {path:'reg',component:RegComponent},
+    {path:'c',component:CComponent},
 ];

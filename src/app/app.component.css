@@ -11,7 +11,7 @@
 }
 .navbar {
     overflow: hidden;
-    background-color: white; 
+    background-color: rgb(243, 230, 60); 
   }
   
   .navbar a {
@@ -42,14 +42,18 @@
     color:rgb(246, 180, 56)
   }
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: grey;
+    background-color: rgb(12, 153, 31);
   }
+  .navbar a:focus, .subnav:focus .subnavbtn {
+    background-color: rgb(12, 153, 31);
+  }
+  
   
   .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color:black;
+    background-color:rgb(246, 244, 242);
     width: 100%;
     z-index: 1;
   }
@@ -57,7 +61,7 @@
   .subnav-content a {
     display: flex;
     flex-direction: column;
-    color: white ;
+    color:rgb(126, 6, 6) ;
     text-decoration: none;
   }
   
