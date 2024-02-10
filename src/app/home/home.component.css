@@ -24,9 +24,9 @@ h1{
 }
 .container2{
     
-    position: absolute;
+    position:absolute;
     transform: translate(-50%,100%);
-    top: 50%;
+    top: 30%;
     left: 50%;
     overflow: hidden;
     border: 20px solid #ffffff;
@@ -69,23 +69,6 @@ img{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 36rem)  {
     *{
         font-size: 16px;
@@ -100,6 +83,12 @@ img{
         width:450px;
         margin-left: 10px;
 
+    }
+    .container2{
+        transform: translate(-50%,260%);
+    }
+    .wrapper img{
+        width: 100%;
     }
 
 }
