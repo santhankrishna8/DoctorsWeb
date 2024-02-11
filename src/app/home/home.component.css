@@ -1,13 +1,35 @@
-
+*{
+    font-family: monospace;
+    
+}
 h1{
-    color:chartreuse;
+    color:black;
     text-align: center;
-    background-color: white;
+   
 }
 .logo img{
     color: orange;
     margin:15px;
     width:80%;
+    
+}
+.logo{
+    flex:1.2;
+    margin:auto;
+}
+.e{
+    flex:0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin:1rem;
+    background-color: rgb(246, 180, 56);
+    height:30vh;
+    
+}
+.e li{
+    background-color: rgb(246, 186, 73);
+    box-shadow: -6px 6px 10px  rgb(152, 112, 112);
+    margin:1rem 1rem 1rem 0;
 }
 
 .h{
@@ -15,71 +37,96 @@ h1{
 }
 .container{
     display:flex;
-    flex-direction: row;
-    gap:0.5rem;
+    margin:0;
+   
+
 }
-.text{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 3rem;
-    color:red;
-}
-.container2{
-    
-    position:absolute;
-    transform: translate(-5%,-18%);
-    top: 60%;
-    left: 50%;
+
+/* Basic image positioning and container sizing */
+.slider-container {
+    width: 600px; /* Match image width for one visible image */
+    margin: 0 auto;
     overflow: hidden;
-    border: 20px solid #ffffff;
-    border-radius: 8px;
-    box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
 }
-.wrapper{
-    width: 90%;
+
+.slider-images {
+    position: relative;
     display: flex;
-    animation: slide 16s infinite;
+    animation: slide 50s infinite ease-in-out; /* Total animation time */
 }
 
-
-.container3 {
-    transform: translate(30%,100%);
-    padding:1rem;
-    
+/* Ensure uniform image dimensions and scaling */
+.slider-images img {
+    max-width: 600px; /* Set desired width */
+    max-height: 500px; /* Set desired height */
+    object-fit: contain ; /* Fill container while preserving aspect ratio */
 }
-.container3 ul li{
-    transform: translate(30%,100%);
 
-}
-@keyframes slide{
-    0%{
+/* Animation styles for image display time and loop */
+@keyframes slide {
+    0% {
         transform: translateX(0);
     }
-    25%{
-        transform: translateX(0);
+    20% {
+        transform: translateX(-600px); /* 20% per image (5s each) */
     }
-    30%{
-        transform: translateX(-100%);
+    40% {
+        transform: translateX(-1200px);
     }
-    50%{
-        transform: translateX(-100%);
+    60% {
+        transform: translateX(-1800px);
     }
-    55%{
-        transform: translateX(-200%);
+    80% {
+        transform: translateX(-2400px);
     }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
+    100% {
+        transform: translateX(-3000px); /* Adjust distance based on image count */
     }
 }
-img{
-    width: 100%;
+
+/* Optional responsiveness (uncomment to enable) */
+@media (max-width: 768px) {
+    .slider-container {
+        width: 400px; /* Adjust width on smaller screens */
+    }
+    .slider-images img {
+        width: 400px; /* Set desired width */
+        max-height: 500px; /* Set desired height */
+        object-fit: contain ; /* Fill container while preserving aspect ratio */
+    }
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        20% {
+            transform: translateX(-400px); /* 20% per image (5s each) */
+        }
+        40% {
+            transform: translateX(-800px);
+        }
+        60% {
+            transform: translateX(-1200px);
+        }
+        80% {
+            transform: translateX(-1600px);
+        }
+        100% {
+            transform: translateX(-2000px); /* Adjust distance based on image count */
+        }
+    }
+
 }
+
+  
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 36rem)  {
