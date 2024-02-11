@@ -84,40 +84,7 @@ h1{
     }
 }
 
-/* Optional responsiveness (uncomment to enable) */
-@media (max-width: 768px) {
-    .slider-container {
-        width: 400px; /* Adjust width on smaller screens */
-    }
-    .slider-images img {
-        width: 400px; /* Set desired width */
-        max-height: 500px; /* Set desired height */
-        object-fit: contain ; /* Fill container while preserving aspect ratio */
-    }
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-        20% {
-            transform: translateX(-400px); /* 20% per image (5s each) */
-        }
-        40% {
-            transform: translateX(-800px);
-        }
-        60% {
-            transform: translateX(-1200px);
-        }
-        80% {
-            transform: translateX(-1600px);
-        }
-        100% {
-            transform: translateX(-2000px); /* Adjust distance based on image count */
-        }
-    }
 
-}
-
-  
 
 
 
@@ -145,14 +112,60 @@ h1{
         margin-right: 7rem;
 
     }
-    .container2{
-        transform: translate(-50%,270%);
-        margin-top: -45rem;
-        width:80%;
+   
+    .slider-container {
+        width: 250px; /* Match image width for one visible image */
+        margin: 0 auto;
+        overflow: hidden;
     }
-    .wrapper img{
-        width: 100%;
+    
+    .slider-images {
+        position: relative;
+        display: flex;
+        animation: slide 50s  ease-in-out infinite;
+        /* Total animation time */
     }
+    
+    /* Ensure uniform image dimensions and scaling */
+    .slider-images img {
+        max-width: 250px; /* Set desired width */
+        max-height: 500px; /* Set desired height */
+        object-fit: contain ; /* Fill container while preserving aspect ratio */
+    }
+    
+    /* Animation styles for image display time and loop */
+    @keyframes slide-small {
+        0% {
+          transform: translateX(0); /* Start at position 0 */
+        }
+        10% { /* Hold image fully visible for 8 seconds */
+            transform: translateX(0);
+          }
+        30% { /* Start transition to next image */
+          transform: translateX(-250px);
+        }
+        50% { /* Complete transition in 20 seconds */
+          transform: translateX(-500px);
+        }
+        /* Add more steps for additional images */
+        70% {
+          transform: translateX(-750px);
+        }
+        90% {
+          transform: translateX(-1000px);
+        }
+        100% {
+          transform: translateX(-1250px);
+          animation-delay: 5s; /* Adjust distance based on image count */
+
+        }
+       
+        
+      }
+      /* Apply slide-small animation for mobile screens */
+      .slider-images {
+        animation: slide-small 80s infinite ease-in-out; /* Total duration 70s */
+      }
 
 }
 
